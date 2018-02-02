@@ -20,32 +20,21 @@ public class Compte {
 
     public double retirer(double somme){
         double tmp=0;
-        if(solde>=somme) tmp = solde -= somme;
+        tmp = solde -= somme;
 
         return tmp;
     }
 
     public double virer(double somme, Compte compteDestination){
 
-        if(solde>=somme){
             compteDestination.setSolde(somme);
             retirer(somme);
-        }
+
         return solde;
     }
 
     @Override public String toString() {  return  "Solde : "+solde ; }
 
 
-    public int main(){
-        toString();
-        Compte my_account = new Compte();
-        Compte good_Account = new Compte(5000.00);
 
-        good_Account.deposer(1000);
-        good_Account.virer(5000.0,my_account);
-        
-        System.out.println(good_Account.toString());
-        return 0;
-    }
 }
