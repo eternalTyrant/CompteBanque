@@ -1,7 +1,7 @@
 package banque;
 
 public class Livre_A extends Compte{
-
+ 
     private double solde=0.0;
 
     public double getSolde(){return solde;}
