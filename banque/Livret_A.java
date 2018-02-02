@@ -20,6 +20,15 @@ public class Livre_A extends Compte{
         return tmp;
     }
 
+    public double virer(double somme, Livre_A compteDestination){
+
+        if(solde>=somme){
+            compteDestination.setSolde(somme);
+            retirer(somme);
+        }
+        return solde;
+    }
+
     @Override public String toString() {  return  "Solde : "+solde ; }
 
     public int main(){
