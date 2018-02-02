@@ -34,6 +34,8 @@ public class Compte {
         return solde;
     }
 
+    @Override public String toString() {  return  "Solde : "+solde ; }
+
 
     public int main(){
         toString();
