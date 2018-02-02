@@ -44,6 +44,8 @@ public class Compte {
 
         good_Account.deposer(1000);
         good_Account.virer(5000.0,my_account);
+        
+        System.out.println(good_Account.toString());
         return 0;
     }
 }
